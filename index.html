@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माझा प्रवास - कविता काजल कडम</title>
+    <style>
+        body {
+            font-family: 'Mangal', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4A90E2; /* Soft Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .poem-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .poem-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .poem-author {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-style: italic;
+            color: #777;
+        }
+        .poem-section {
+            display: none;
+        }
+        .poem-button {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .poem-button:hover {
+            background-color: #357ABD;
+        }
+        footer {
+            background-color: #4A90E2; /* Soft Blue */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function showPoem(language) {
+            const sections = document.querySelectorAll('.poem-section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            const activeSection = document.getElementById(language);
+            activeSection.style.display = 'block'; // Show selected section
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>माझा प्रवास - कविता काजल कडम</h1>
+</header>
+
+<div class="poem-container">
+    <div class="poem-title">माझा प्रवास</div>
+    <div class="poem-author">लेखक: काजल कडम</div>
+
+    <!-- Language Buttons -->
+    <div style="text-align:center;">
+        <a href="javascript:void(0)" class="poem-button" onclick="showPoem('marathi')">मराठी</a>
+        <a href="javascript:void(0)" class="poem-button" onclick="showPoem('hindi')">हिंदी</a>
+        <a href="javascript:void(0)" class="poem-button" onclick="showPoem('english')">English</a>
+    </div>
+
+    <!-- Poem Sections -->
+
+    <div id="marathi" class="poem-section">
+        <div class="poem">
+            <h3>पहिली नजर</h3>
+            <p>पहिल्या नजरेत त्याला आवडलेली,</p>
+            <p>ती मुलगी कळत नकळत त्याच्या डोळ्यात बसलेली,</p>
+            <p>तिचा सहजच तो निरागस हसरा चेहरा,</p>
+            <p>जणू त्याच्या मनात घर करून गेलेला.</p>
+            <p>तो तिला पाहतो, मनात काही सांगू इच्छतो,</p>
+            <p>पण शब्द त्याच्या ओठांवर येण्याआधीच थांबतात,</p>
+            <p>तिच्या हसण्यात हरवून जातो,</p>
+            <p>आणि तिच्या प्रत्येक हालचालीत प्रेमाचे सूर शोधतो.</p>
+            <p>तिला कळत नाही सुरुवातीला,</p>
+            <p>तो तिच्याकडे कसा पाहतो,</p>
+            <p>पण हळूहळू त्या नजरेतील गुपित समजायला लागते,</p>
+            <p>तीदेखील त्याच्या नजरेत काहीतरी शोधायला लागते.</p>
+            <p>हळूहळू तिचे मन बदलायला लागते,</p>
+            <p>त्याच्यासाठी काहीतरी वेगळे जाणवायला लागते,</p>
+            <p>त्याच्या साध्या साध्या गोष्टींमध्ये ती सुख शोधायला लागते,</p>
+            <p>आणि तीही त्याच्या प्रेमात पडायला लागते.</p>
+            <p>त्या दोघांचं हसतं खेळतं प्रेम,</p>
+            <p>पहिल्या नजरेतल्या त्या भावना आता वाढू लागतात,</p>
+            <p>तिच्या हृदयाच्या धडधडीत तोही सामील होतो,</p>
+            <p>आणि ती त्याच्या प्रेमात हळूहळू हरवते.</p>
+        </div>
+
+        <div class="poem">
+            <h3>पिढी बदलतेय</h3>
+            <p>पिढी बदलतेय, विचार नवे येतात,</p>
+            <p>जुन्या रूढी मागे सरतात.</p>
+            <p>तंत्रज्ञानाची भरारी घेते,</p>
+            <p>नवीन स्वप्नं गगनाला भिडते.</p>
+            <p>जुने संस्कार मोलाचे ठरतात,</p>
+            <p>नव्या चुकांमधून धडे शिकवतात.</p>
+            <p>जुन्या-नव्या विचारांचा संगम होतो,</p>
+            <p>माणुसकीनेच जीवन सुजलाम होते.</p>
+            <p>जुनी पिढी म्हणते, "संस्कार जपा",</p>
+            <p>नवी म्हणते, "जगाला नवा विचार द्या".</p>
+            <p>जग बदलतं, पिढ्या पुढे जातात,</p>
+            <p>"जेनरेशन बिळा अली, अली!" म्हणत इतिहास घडवतात.</p>
+        </div>
+    </div>
+
+    <div id="hindi" class="poem-section">
+        <div class="poem">
+            <h3>ज़िंदगी</h3>
+            <p>ज़िंदगी, एक सफ़र अनजाना,</p>
+            <p>कभी हँसना, कभी रोना,</p>
+            <p>हर मोड़ पर नए रंग दिखाए,</p>
+            <p>कभी सुखद तो कभी ग़म के साये।</p>
+            <p>सपनों की डोरी से बंधी हुई,</p>
+            <p>उम्मीदों के पंखों से उड़ती हुई,</p>
+            <p>हर गिरावट में छुपा है सबक,</p>
+            <p>हर अंधेरे के बाद है सूरज चमक।</p>
+            <p>कभी कांटों का रास्ता, कभी फूलों की बगिया,</p>
+            <p>कभी सुकून की बारिश, कभी दर्द की बगावत,</p>
+            <p>ज़िंदगी बस यूं ही चलती रहती है,</p>
+            <p>हर पल में एक नई कहानी लिखती है।</p>
+            <p>कभी रिश्तों की मिठास, कभी तकरार की कसक,</p>
+            <p>कभी अकेलेपन का एहसास, कभी अपनों का साथ,</p>
+            <p>हर लम्हा सिखाता है जीने का हुनर,</p>
+            <p>ज़िंदगी को समझो, न बनाओ इसे बेख़बर।</p>
+            <p>चलो, मुस्कान से हर दर्द को छुपाएं,</p>
+            <p>सपनों को अपने आसमान में सजाएं,</p>
+            <p>ज़िंदगी को एक तोहफ़ा समझ कर जीना,</p>
+            <p>हर पल को प्यार से अपना बनाना।</p>
+        </div>
+    </div>
+
+    <div id="english" class="poem-section">
+        <div class="poem">
+            <h3>English</h3>
+            <p>My Journey</p>
+            <p>At this turn of life,</p>
+            <p>My journey began.</p>
+            <p>Every opportunity ahead,</p>
+            <p>Walked along with my dreams.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>संपर्क: <a href="mailto:kajalkadam737@gmail.com">kajalkadam737@gmail.com</a></p>
+    <p>फोन: +91-XXXX-XXXXXX</p>
+</footer>
+
+</body>
+</html>
